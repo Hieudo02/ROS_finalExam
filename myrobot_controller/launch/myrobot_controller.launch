@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<launch>
+
+    <!-- <node pkg="rostopic" type="rostopic" name="joint1_pub" args="pub /my_diffbot/joint1_position_controller/command std_msgs/Float64 '{data: 0.01}'" output="screen" /> -->
+    <!-- <node pkg="rostopic" type="rostopic" name="joint2_pub" args="pub /my_diffbot/joint2_position_controller/command std_msgs/Float64 '{data: -0.01}'" output="screen" /> -->
+
+    <!-- <node pkg="rostopic" type="rostopic" name="joint1_pub" args="pub /my_diffbot/joint1_velocity_controller/command std_msgs/Float64 '{data: 3.0}'" output="screen" /> -->
+    <!-- <node pkg="rostopic" type="rostopic" name="joint2_pub" args="pub /my_diffbot/joint2_velocity_controller/command std_msgs/Float64 '{data: -3.0}'" output="screen" /> -->
+
+
+    <node pkg="myrobot_controller" type="test.py" name="robot_controller" output="screen" />
+</launch>
+
+
